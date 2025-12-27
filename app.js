@@ -191,23 +191,57 @@
 // Prompt user to guess the secret number. a. If user guesses the same number, 
 // show “Bingo! Correct answer”. b. If the guessed number +1 is the secret number, 
 //  show “Close enough to the correct answer”.
-var num = 6 ;
+// var num = 6 ;
 
-var ans = +prompt("guess game enter a number 1 t0 10");
-var ans2 = ans - 1;
-if (num === ans){
-    document.write("<h3 class = 'gender'>" + "Bingo! Correct answer" + "</h3>");
-}
-if(num === ans2){
-     document.write("<h3 class = 'gender'>" + "Close enough to the correct answer" + "</h3>")
+// var ans = Number(prompt("guess game enter a number 1 t0 10"));
+// if (num === ans){
+//     document.write("<h3 class = 'gender'>" + "Bingo! Correct answer" + "</h3>");
+// }
+// if(num === ans - 1){
+//      document.write("<h3 class = 'gender'>" + "Close enough to the correct answer" + "</h3>")
 
-}
+// }
 
 // Q8. Write a program to check whether the given number is divisible by
 //  3. Show the message to the user if the number is divisible by 3.
 
+// var myNum = Number(prompt("enter Number"));
+// if(myNum % 3 == 0){
+//     document.write("<h3 class = 'gender'>" + "number is divisible by 3" + "</h3>")
+// }
+
 // Q9.Write a program that checks whether the given input is an even number or an odd number.
 
-// Q10. Write a program that takes temperature as input and shows a message based on following criteria a. T > 40 then “It is too hot outside.” b. T > 30 then “The Weather today is Normal.” c. T > 20 then “Today’s Weather is cool.” d. T > 10 then “OMG! Today’s weather is so Cool.”
+// var givenNum = Number(prompt("enter number"));
+// if(givenNum  % 2 == 0){
+//      document.write("<h3 class = 'gender'>" + "an even number" + "</h3>")
+// }
+// if(givenNum % 2 == 1){
+//      document.write("<h3 class = 'gender'>" + "an odd number" + "</h3>")
+// }
 
+
+
+// Q10. Write a program that takes temperature as input and shows a message based on following criteria
+//  a. T > 40 then “It is too hot outside.” b. T > 30 then “The Weather today is Normal.” 
+// c. T > 20 then “Today’s Weather is cool.”
+// d. T > 10 then “OMG! Today’s weather is so Cool.”
+
+var temperature = Number(prompt("Enter today temperature"));
+if(temperature >= 40){
+    document.write("<h3 class = 'gender'>" + "It is too hot outside." + "</h3>")
+
+}
+if(temperature <= 30){
+    document.write("<h3 class = 'gender'>" + "The Weather today is Normal." + "</h3>")
+
+}
+if(temperature <= 20){
+    document.write("<h3 class = 'gender'>" + "Today’s Weather is cool." + "</h3>")
+
+}
+if(temperature <= 10){
+    document.write("<h3 class = 'gender'>" + "OMG! Today’s weather is so Cool" + "</h3>")
+
+}
 // Q11.Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input: a. First number b. Second number c. Operation (+, -, *, /, %) Compute & show the calculated result to user.
