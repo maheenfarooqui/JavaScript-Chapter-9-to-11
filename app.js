@@ -197,7 +197,11 @@
 // if (num === ans){
 //     document.write("<h3 class = 'gender'>" + "Bingo! Correct answer" + "</h3>");
 // }
-// if(num === ans - 1){
+// if(ans == 7){
+//      document.write("<h3 class = 'gender'>" + "Close enough to the correct answer" + "</h3>")
+
+// }
+// if(ans == 5){
 //      document.write("<h3 class = 'gender'>" + "Close enough to the correct answer" + "</h3>")
 
 // }
@@ -227,21 +231,44 @@
 // c. T > 20 then “Today’s Weather is cool.”
 // d. T > 10 then “OMG! Today’s weather is so Cool.”
 
-var temperature = Number(prompt("Enter today temperature"));
-if(temperature >= 40){
-    document.write("<h3 class = 'gender'>" + "It is too hot outside." + "</h3>")
+// var temperature = Number(prompt("Enter today temperature"));
+// if(temperature >= 40){
+//     document.write("<h3 class = 'gender'>" + "It is too hot outside." + "</h3>")
 
-}
-if(temperature <= 30){
-    document.write("<h3 class = 'gender'>" + "The Weather today is Normal." + "</h3>")
+// }
+// if(temperature <= 30){
+//     document.write("<h3 class = 'gender'>" + "The Weather today is Normal." + "</h3>")
 
-}
-if(temperature <= 20){
-    document.write("<h3 class = 'gender'>" + "Today’s Weather is cool." + "</h3>")
+// }
+// if(temperature <= 20){
+//     document.write("<h3 class = 'gender'>" + "Today’s Weather is cool." + "</h3>")
 
-}
-if(temperature <= 10){
-    document.write("<h3 class = 'gender'>" + "OMG! Today’s weather is so Cool" + "</h3>")
+// }
+// if(temperature <= 10){
+//     document.write("<h3 class = 'gender'>" + "OMG! Today’s weather is so Cool" + "</h3>")
 
-}
-// Q11.Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input: a. First number b. Second number c. Operation (+, -, *, /, %) Compute & show the calculated result to user.
+// }
+// Q11.Write a program to create a calculator for +,-,*, / & % using if statements.
+//  Take the following input: a. First number b. Second number 
+// c. Operation (+, -, *, /, %) Compute & show the calculated result to user.
+
+// var myNum1 = Number(prompt("enter number"));
+// var myOper = prompt("enter +, -, *, /, % ");
+// var myNum2 = Number(prompt("enter number"));
+
+// if(myOper == "+"){
+//     document.write(myNum1+ "+" + myNum2 + "="+ (myNum1 + myNum2));
+// }
+// if(myOper == "-"){
+//     document.write(myNum1+ "-" + myNum2 + "="+ (myNum1 - myNum2));
+// }
+// if(myOper == "*"){
+//     document.write(myNum1+ "*" + myNum2 + "="+ myNum1 * myNum2);
+// }
+// if(myOper == "/"){
+//     document.write(myNum1+ "/" + myNum2 + "="+ myNum1 / myNum2);
+// }
+// if(myOper == "%"){
+//     document.write(myNum1+ "%" + myNum2 + "="+ myNum1 % myNum2);
+// }
+
