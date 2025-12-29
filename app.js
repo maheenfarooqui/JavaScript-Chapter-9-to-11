@@ -95,95 +95,46 @@
 // Q6. Write a program to take input the marks obtained in three subjects & total marks. 
 // Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:
 // Show the total marks, marks obtained, percentage, grade & remarks like:
-// var subject1 = prompt("Enter your subject name");
-// var subject2 = prompt("Enter your second subject name");
-// var subject3 = prompt("Enter your third subject name");
-// var subject1Marks = Number(prompt("enter your first subject marks"));
-// var subject2Marks = Number(prompt("enter your second subject marks"));
-// var subject3Marks = Number(prompt("enter your third subject marks"));
-// var totalMarks = 300;
-// var subject1Percentage = (subject1Marks / 100) * 100;
-// var subject2Percentage = (subject2Marks / 100) * 100;
-// var subject3Percentage = (subject3Marks / 100) * 100;
-// var totalObMarks = subject1Marks + subject2Marks + subject3Marks;
-// var totalPercentage = (totalObMarks / totalMarks) * 100;
-// document.write(
-//   "<table>" +
-//     "<tr>" +
-//     "<th>" +
-//     "Subject" +
-//     "</th>" +
-//     "<th>" +
-//     "Total Marks" +
-//     "</th>" +
-//     "<th>" +
-//     "Obtained Marks" +
-//     "</th>" +
-//     "<th>" +
-//     "Percentage" +
-//     "</th>" +
-//     "</tr>" +
-//     "<tr>" +
-//     "<td class='sub'>" +
-//     subject1 +
-//     "</td>" +
-//     "<td>" +
-//     100 +
-//     "</td>" +
-//     "<td>" +
-//     subject1Marks +
-//     "</td>" +
-//     "<td>" +
-//     subject1Percentage +
-//     "%" +
-//     "</td>" +
-//     "</tr>" +
-//     "<tr>" +
-//     "<td class='sub'>" +
-//     subject2 +
-//     "</td>" +
-//     "<td>" +
-//     100 +
-//     "</td>" +
-//     "<td>" +
-//     subject2Marks +
-//     "</td>" +
-//     "<td>" +
-//     subject2Percentage +
-//     "%" +
-//     "</td>" +
-//     "</tr>" +
-//     "<tr>" +
-//     "<td class='sub'>" +
-//     subject3 +
-//     "</td>" +
-//     "<td>" +
-//     100 +
-//     "</td>" +
-//     "<td>" +
-//     subject3Marks +
-//     "</td>" +
-//     "<td>" +
-//     subject3Percentage +
-//     "%" +
-//     "</td>" +
-//     "</tr>" +
-//     "<tfoot>" +
-//     "<td>" +
-//     "</td>" +
-//     "<td>" +
-//     300 +
-//     "</td>" +
-//     "<td>" +
-//     totalObMarks +
-//     "</td>" +
-//     "<td>" +
-//     totalPercentage +
-//     "%" +
-//     "</td>" +
-//     "</tfoot>" +
-//     "</table>"
-// );
+var sub1 =+prompt("enter your marks");
+var sub2 = +prompt("enter your marks");
+var sub3 = +prompt("enter your marks");
+var obtMarks = sub1 + sub2 + sub3;
+var totalMarks = 300;
+var remarks , grade;
+var percent = (obtMarks / 300) * 100 ;
+if (percent > 100){
+    obtMarks = "invalid Marks";
+    percent = "invalid";
+    grade = "invalid grade";
+    remarks = "sorry write correct marks";
+}
+else if(percent >= 80){
+    grade = "A-one";
+    remarks = "Excellent";
+
+}
+else if(percent >= 70){
+    grade = "A";
+    remarks = "Good";
+
+}
+else if(percent >= 60){
+    grade = "B";
+    remarks = "keep going";
+
+}
+else if(percent >= 50){
+    grade = "c";
+    remarks = "Sorry";
+
+}
+document.write("<h1>Mark Sheet</h1><br>");
+document.write("Total MArks: "+ totalMarks +"<br>");
+document.write("Marks obtain: "+ obtMarks +"<br>");
+document.write("Percentage: "+ percent + " %" +"<br>");
+document.write("Grade: "+ grade +"<br>");
+document.write("Remarks: "+ remarks +"<br>");
+
 
 
 // Q7.Guess game:
