@@ -92,55 +92,83 @@
 // if ("car" < "cat") {
 //   alert("car is smaller than cat");
 // }
-// Q6. Write a program to take input the marks obtained in three subjects & total marks. 
+// Q6. Write a program to take input the marks obtained in three subjects & total marks.
 // Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:
 // Show the total marks, marks obtained, percentage, grade & remarks like:
-var sub1 =+prompt("enter your marks");
+var sub1 = +prompt("enter your marks");
 var sub2 = +prompt("enter your marks");
 var sub3 = +prompt("enter your marks");
 var obtMarks = sub1 + sub2 + sub3;
 var totalMarks = 300;
-var remarks , grade;
-var percent = (obtMarks / 300) * 100 ;
-if (percent > 100){
-    obtMarks = "invalid Marks";
-    percent = "invalid";
-    grade = "invalid grade";
-    remarks = "sorry write correct marks";
-}
-else if(percent >= 80){
-    grade = "A-one";
-    remarks = "Excellent";
-
-}
-else if(percent >= 70){
-    grade = "A";
-    remarks = "Good";
-
-}
-else if(percent >= 60){
-    grade = "B";
-    remarks = "keep going";
-
-}
-else if(percent >= 50){
-    grade = "c";
-    remarks = "Sorry";
-
+var remarks, grade;
+var percent = (obtMarks / 300) * 100;
+if (percent > 100) {
+  obtMarks = "invalid Marks";
+  percent = "invalid";
+  grade = "invalid grade";
+  remarks = "sorry write correct marks";
+} else if (percent >= 80) {
+  grade = "A-one";
+  remarks = "Excellent";
+} else if (percent >= 70) {
+  grade = "A";
+  remarks = "Good";
+} else if (percent >= 60) {
+  grade = "B";
+  remarks = "keep going";
+} else if (percent >= 50) {
+  grade = "c";
+  remarks = "Sorry";
 }
 document.write("<h1>Mark Sheet</h1><br>");
-document.write("Total MArks: "+ totalMarks +"<br>");
-document.write("Marks obtain: "+ obtMarks +"<br>");
-document.write("Percentage: "+ percent + " %" +"<br>");
-document.write("Grade: "+ grade +"<br>");
-document.write("Remarks: "+ remarks +"<br>");
+document.write("Total MArks: " + totalMarks + "<br>");
+document.write("Marks obtain: " + obtMarks + "<br>");
+document.write("Percentage: " + percent + " %" + "<br>");
+document.write("Grade: " + grade + "<br>");
+document.write("Remarks: " + remarks + "<br>");
 
-
+document.write(
+  "<table>" +
+    "<tr>" +
+    "<th>Percentage % </th>" +
+    "<th>Grade</th>" +
+    "<th>Remarks</th>" +
+    "</tr>" +
+    "<tr>" +
+    "<td>Greater than and equal to 80</td>" +
+    +"<td>" +
+    grade +
+    "</td>" +
+    "<td>" +
+    remarks +
+    "</td>" +
+    "</tr>" +
+    "<tr>" +
+    "<td>" +
+    "Greater than and equal to 70</td>" +
+    "<td>" +
+    grade +
+    "</td>" +
+    "<td>" +
+    remarks +
+    "</td>" +
+    "</tr>" +
+    "<tr>" +
+    "<td>Greater than and equal to 60</td>" +
+    "<td>" +
+    grade +
+    "</td>" +
+    "<td>" +
+    remarks +
+    "</td>" +
+    "</tr>" +
+    "</table> "
+);
 
 // Q7.Guess game:
-// Store a secret number (ranging from 1 to 10) in a variable. 
-// Prompt user to guess the secret number. a. If user guesses the same number, 
-// show “Bingo! Correct answer”. b. If the guessed number +1 is the secret number, 
+// Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number. a. If user guesses the same number,
+// show “Bingo! Correct answer”. b. If the guessed number +1 is the secret number,
 //  show “Close enough to the correct answer”.
 // var num = 6 ;
 
@@ -175,10 +203,8 @@ document.write("Remarks: "+ remarks +"<br>");
 //      document.write("<h3 class = 'gender'>" + "an odd number" + "</h3>")
 // }
 
-
-
 // Q10. Write a program that takes temperature as input and shows a message based on following criteria
-//  a. T > 40 then “It is too hot outside.” b. T > 30 then “The Weather today is Normal.” 
+//  a. T > 40 then “It is too hot outside.” b. T > 30 then “The Weather today is Normal.”
 // c. T > 20 then “Today’s Weather is cool.”
 // d. T > 10 then “OMG! Today’s weather is so Cool.”
 
@@ -200,7 +226,7 @@ document.write("Remarks: "+ remarks +"<br>");
 
 // }
 // Q11.Write a program to create a calculator for +,-,*, / & % using if statements.
-//  Take the following input: a. First number b. Second number 
+//  Take the following input: a. First number b. Second number
 // c. Operation (+, -, *, /, %) Compute & show the calculated result to user.
 
 // var myNum1 = Number(prompt("enter number"));
@@ -222,4 +248,3 @@ document.write("Remarks: "+ remarks +"<br>");
 // if(myOper == "%"){
 //     document.write(myNum1+ "%" + myNum2 + "="+ myNum1 % myNum2);
 // }
-

@@ -34,9 +34,14 @@ table{
     text-align: center;
     margin: auto;
 }
+th , tr , td{
+    border: 2px solid #588c7e;
+    padding: 15px;
+}
 th{
-    background-color: #588c7e;
+    background-color: #75afa0;
     color: white;
+    
     
 }
 .sub{
